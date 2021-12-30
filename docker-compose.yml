@@ -7,8 +7,8 @@ mysql:
     - MYSQL_DATABASE=petclinic
   volumes:
     - "./conf.d:/etc/mysql/conf.d:ro"
-mysql:
-  image: mysql:5.7
+phpmyadmin:
+  image: phpmyadmin/phpmyadmin
   ports:
     - "80:80"
   environment:
